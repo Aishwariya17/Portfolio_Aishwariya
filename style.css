@@ -4,9 +4,9 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-} 
+}
 
-html { 
+html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
@@ -46,7 +46,7 @@ section {
 .intro-message {
 	font-size: 20px;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 .section-title {
@@ -65,14 +65,14 @@ section {
 
 .cta {
 	display: inline-block;
-	padding: 10px 30px;
+	padding: 10px 10px;
 	color: white;
 	background-color: transparent;
 	border: 2px solid crimson;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	margin-top: 30px;
+	margin-top: 10px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
@@ -272,6 +272,7 @@ section {
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
+	margin-bottom: 10px;
 }
 
 #hero h1:nth-child(1) {
@@ -308,6 +309,41 @@ section {
 
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
+}
+
+#hero h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#hero .social-icon {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#hero .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+
+#hero .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+
+#hero .social-item:hover img {
+	filter: grayscale(0);
+}
+
+#hero p {
+	color: white;
+	font-size: 1.3rem;
 }
 
 /* End Hero Section */
