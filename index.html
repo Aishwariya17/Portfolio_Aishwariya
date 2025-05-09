@@ -3,344 +3,712 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>My Website</title> 
+  <title>Aishwariya Alagesan- Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1>Aishwariya Alagesan</h1>
-          </a>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/photo.JPG" alt="Richard hanrick" width="100">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Aishwariya Alagesan</h1>
+
+          <p class="title">Data Analyst</p>
         </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#skills" data-after="Skills">Skills</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:aishwariya1709@gmail.com" class="contact-link">aishwariya1709@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+18573796927" class="contact-link">+1 (857) 379-6927</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1998-09-17">Sep 17, 1998</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Boston, Massachusetts, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/aishwariya-alagesan/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Aishwariya17" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/_aish17._/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>I'm a Data Analytics Engineering graduate from Northeastern University with over 2 years of experience at
+            Temenos and
+            Cognizant. I specialize in building scalable data pipelines, conducting data analysis, and delivering
+            impactful
+            dashboards using tools like Tableau and Power BI. I am passionate about turning data into insights and
+            making informed
+            business decisions through technology.</p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/da.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                <p class="service-item-text">
+                  Performing exploratory and statistical analysis to generate actionable business insights.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/BI.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Business Intelligence</h4>
+
+                <p class="service-item-text">
+                  Developing dashboards in Tableau and Power BI to support strategic business decisions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/de.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Engineering</h4>
+
+                <p class="service-item-text">
+                  Automating data pipelines using Airflow, AWS, and Snowflake for real-time analytics.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/DS.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+
+                <p class="service-item-text">
+                  Applying ML techniques for segmentation, classification, and predictive analytics.
+                </p>
+              </div>
+
+            </li>
+
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Header -->
+
+        </section>
 
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>This is <span></span></h1>
-        <h1>Aishwariya Alagesan<span></span></h1>
-        <div class="social-icon">
-          <div class="social-item">
-            <a href="https://www.linkedin.com/in/aishwariya-alagesan/"><img src="https://img.icons8.com/bubbles/100/linkedin.png" /></a>
-          </div>
-          <div class="social-item">
-            <a href="https://github.com/Aishwariya17"><img src="https://img.icons8.com/bubbles/100/github.png" /></a>
-          </div>
-          <div class="social-item">
-            <a href="https://public.tableau.com/app/profile/aishwariya.alagesan"><img src= "https://img.icons8.com/bubbles/100/bar-chart.png" /></a>
-          </div>
-          <div class="social-item">
-            <a href="https://www.instagram.com/_aish17._/"><img src="https://img.icons8.com/bubbles/100/instagram-new--v1.png" /></a>
-          </div>
-        </div>
-        <a href="#about" type="btn" class="cta">About Me</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+        <!--
+          - testimonials
+        -->
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="skills container">
-      <div class="skills-top">
-        <h1 class="section-title">Technical <span>Skills</span></h1>
-      </div>
-      <div class="all-skills">
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-python"></i></div>
-          <h2>Python</h2>
-          <p>Proficient in Python programming language for data analysis and visualization.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fas fa-database"></i></div>
-          <h2>SQL</h2>
-          <p>Expertise in SQL for database management and querying.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fas fa-chart-bar"></i></div>
-          <h2>Power BI</h2>
-          <p>Skilled in creating interactive visualizations and business intelligence dashboards using Power BI.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fas fa-chart-line"></i></div>
-          <h2>Tableau</h2>
-          <p>Proficient in creating data visualizations and dashboards using Tableau.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fas fa-brain"></i></div>
-          <h2>Machine Learning</h2>
-          <p>Experience in implementing machine learning algorithms for predictive modeling and data analysis.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-windows"></i></div>
-          <h2>MS Office Suite</h2>
-          <p>Proficient in Microsoft Office Suite, including Word, Excel, and PowerPoint.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fas fa-file-excel"></i></div>
-          <h2>Excel</h2>
-          <p>Advanced skills in Excel, including data analysis, pivot tables, and macros.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-jira"></i></div>
-          <h2>Jira</h2>
-          <p>Experience in using Jira for project management and issue tracking.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-git"></i></div>
-          <h2>Git</h2>
-          <p>Proficient in version control using Git for collaborative software development.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-atlassian"></i></div>
-          <h2>Atlassian</h2>
-          <p>Experience with Atlassian tools such as Jira and Confluence for project management and collaboration.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fas fa-code-branch"></i></div>
-          <h2>ETL</h2>
-          <p>Experience with Extract, Transform, Load (ETL) processes for data integration and data warehousing.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-google"></i></div>
-          <h2>Google Colab</h2>
-          <p>Experience in using Google Colab for running Python code and machine learning experiments in the cloud.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-aws"></i></div>
-          <h2>AWS</h2>
-          <p>Experience with Amazon Web Services (AWS) cloud platform for deploying and managing applications.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-windows"></i></div>
-          <h2>Windows</h2>
-          <p>Proficient in using Microsoft Windows operating system.</p>
-        </div>
-        <div class="skill-item">
-          <div class="icon"><i class="fab fa-linux"></i></div>
-          <h2>Linux</h2>
-          <p>Experience with Linux operating system.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Skills Section -->
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Testimonials</h3>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Academic <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h2>Fit Life Hub Database Management System - A Healthcare initiative</h2>
-            <p>Embark on a journey into the world of fitness with our Fitlife Hub Database System. Designed to
-              revolutionize fitness monitoring, this project employs cutting-edge technology including MySQL, Python,
-              and Neo4j. Dive deep into the realms of ER modeling, UML, and Hierarchical Data Modeling as we sculpt a
-              data-driven fitness paradise. Witness the magic unfold as stored procedures, joins, and triggers work in
-              harmony, enhancing efficiency by a staggering 15%. Are you ready to sculpt your data-driven fitness
-              masterpiece?</p>
-            <a href="https://github.com/Aishwariya17/Fittlife-Hub-Database-system" class="btn">View on GitHub</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/IMAGE-Healthcare.webp" alt="Fitlife Hub Database System">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h2>Customer Segmentation using RFM Analysis</h2>
-            <p>Unlock the secrets hidden within your data with our Customer Segmentation project. Marvel as we ensure
-              near-perfect data integrity through an exhilarating journey of Data Cleaning, Transformation, and Outlier
-              handling. With the power of advanced statistical analysis and machine learning techniques like linear
-              regression, witness customer behavior come to life. Delve into the world of customer cohorts through RFM
-              analysis and K-means clustering, as we unveil the hidden gems buried within your data. Get ready to
-              revolutionize your business strategy with data-driven insights!</p>
-            <a href="https://github.com/Aishwariya17/Customer-Segmentation" class="btn">View on GitHub</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/customer-segmentation-social.png" alt="Customer Segmentation">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h2>EEG Classification Model for Epilepsy Diagnosis</h2>
-            <p>Embark on a journey into the depths of neural patterns with our EEG Classification Model. Witness the
-              marvels of modern medicine as we develop an epilepsy diagnosis tool using Python's sklearn libraries.
-              Brace yourself as neural networks with TensorFlow and Keras reach unprecedented heights, achieving 85% RNN
-              and 92% CNN accuracy. Explore the realms of medical science as we tackle missing data, reduce noise, and
-              extract features from time series and discrete domains. Are you ready to unveil the mysteries hidden
-              within EEG data?</p>
-            <a href="https://github.com/Aishwariya17/EEG-Classification-Model" class="btn">View on GitHub</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/classification.webp" alt="EEG Classification Model">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h2>Insights into Global Mental Health: Tableau Dashboard Analysis</h2>
-            <p>Delve into the crucial realm of mental health analysis with our comprehensive project focused on stress
-              and well-being. Through this project, we explore the multifaceted aspects of mental health, examining
-              factors such as stressors, coping mechanisms, and overall well-being. Using advanced data analysis techniques,
-              we uncover insights into the prevalence of mental health issues, their impact on individuals, and strategies
-              for intervention and support. Join us in understanding the complexities of mental health through data-driven
-              exploration and analysis!</p>
-            <a href="https://public.tableau.com/views/MentalHealthAnalysis_17134062945830/MentalHealthAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"
-              class="btn">View Dashboard</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/mental health.avif"
-              alt="Mental Health Analysis: Understanding the Impact of Stress and Well-being">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h2>Global Insights: Visualizing Data Scientist and Analyst Salaries with Tableau</h2>
-            <p>Explore the fascinating world of global data science and analytics salaries through our captivating
-              Tableau dashboard project. Immerse yourself in an interactive exploration across various countries,
-              uncovering the intricacies of data scientist and analyst compensation. Harnessing the power of Tableau's
-              visualization capabilities, we unveil salary trends, regional disparities, and industry insights with
-              stunning clarity. Get ready to embark on a data-driven journey that will revolutionize your understanding
-              of data science compensation worldwide!</p>
-            <a href="https://public.tableau.com/shared/RHFBKWYZP?:display_count=n&:origin=viz_share_link"
-              class="btn">View Dashboard</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/Job-wise salary analysis dashboard.png"
-              alt="Global Insights: Visualizing Data Scientist and Analyst Salaries with Tableau">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h2>Predictive Modeling of CO2 Emissions in the Automotive Industry Using Machine Learning</h2>
-            <p>Dive into the realm of environmental sustainability with our project on Predictive Modeling of CO2
-              Emissions. Harnessing the power of machine learning models such as Linear, Lasso,
-              K-Nearest Neighbors, and Random Forest, we delve deep into predicting CO2 emissions with
-              remarkable precision. Leveraging Python libraries like scikit-learn and pandas, we achieved outstanding
-              results with 92% R-squared values. With hyperparameter optimization techniques such as Randomized Search and Grid Search, we fine-tuned model performance to
-              enhance predictive accuracy to an impressive 97%.</p>
-            <a href="https://github.com/Aishwariya17/CO2-Emissions-Analysis" class="btn">View on GitHub</a>
-          </div>
-          <div class="project-img">
-            <img src="./img/co2.jpg"
-              alt="Predictive Modeling of CO2 Emissions in the Automotive Industry Using Machine Learning">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item" data-testimonials-item data-testimonials-date="2023-07-15">
+              <div class="content-card">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Amartya Ram" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Amartya Ram</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Aishwariya is an exceptional engineer who consistently delivers innovative, high-quality solutions.
+                    Her analytical skills and dedication made a lasting impact at Temenos. She brings energy, focus, and
+                    creativity to every project. A valuable team player with a passion for problem-solving.
+                  </p>
+                </div>
+              </div>
+            </li>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/IMG_2490.JPG" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Data Enthusiast</h2>
-        <p>Hi there! I'm Aishwariya Alagesan, a data enthusiast currently pursuing my Master's in Data Analytics
-          Engineering at Northeastern University, Boston. I'm passionate about uncovering insights from data.</p>
-        <p>With expertise in Python, SQL, Power BI, and Tableau, I enjoy working with databases like MySQL and Oracle.
-          Whether it's cleaning datasets or creating interactive visualizations, I'm always eager to dive into the data.
-        </p>
-        <p>When I'm not analyzing data, you'll find me exploring new analytical techniques or enjoying a cup of coffee.
-          With a curious mind and a love for data, I'm ready to tackle any data challenge!</p>
-        <a href="./img/Aishwariya_Alagesan_Resume.pdf" class="btn">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+            <li class="testimonials-item" data-testimonials-item data-testimonials-date="2023-07-10">
+              <div class="content-card">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Madhumitha" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Madhumitha</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Aishwariya combines technical excellence with leadership and empathy. She streamlined complex
+                    workflows
+                    at Temenos with ease. Her communication and team spirit make her a standout contributor. A trusted
+                    colleague and natural leader I highly recommend.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 857 379 6927</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>alagesan.a@northeastern.edu</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Boston, MA</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+        <!-- Testimonials Modal Section -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>A</span>ishwariya <span>A</span>lagesan</h1>
-      </div>
-      <h2>Websites</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/aishwariya-alagesan/"><img
-              src="https://img.icons8.com/bubbles/100/linkedin.png" /></a>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="avatar" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <time datetime="" data-modal-date></time>
+              <div data-modal-text></div>
+            </div>
+          </section>
         </div>
-        <div class="social-item">
-          <a href="https://github.com/Aishwariya17"><img src="https://img.icons8.com/bubbles/100/github.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://public.tableau.com/app/profile/aishwariya.alagesan"><img src= "https://img.icons8.com/bubbles/100/bar-chart.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/_aish17._/"><img src="https://img.icons8.com/bubbles/100/instagram-new--v1.png" /></a>
-        </div>
-      </div>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Northeastern University</h4>
+              <span>Sep 2023 — May 2025</span>
+              <p class="timeline-text">
+                Master of Science in Data Analytics Engineering (GPA – 3.9/4.0). Relevant courses: Data Mining, Data
+                Management, Visualization, MLOps.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Analytics Product Engineer – Temenos</h4>
+              <span>Jan 2021 — Jul 2023</span>
+              <p class="timeline-text">
+                Built AWS-based ETL pipelines with Airflow, automated 100K+ record ingestion, developed Tableau
+                dashboards for 20+ branches, and contributed to digital product adoption growth by 10%.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Analyst – Cognizant</h4>
+              <span>May 2020 — Oct 2020</span>
+              <p class="timeline-text">
+                Analyzed 40K+ medical claims using SQL and Power BI, reduced denial rates, and improved adjudication
+                efficiency by 15% through stakeholder collaboration and DAX metric modeling.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python & SQL</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Tableau & Power BI</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">AWS & Snowflake</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Engineering & Analytics</h5>
+                <data value="88">88%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+
+
+
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Data Analysis</button></li>
+            <li class="filter-item"><button data-filter-btn>Data Engineering</button></li>
+            <li class="filter-item"><button data-filter-btn>Data Science</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Data Analysis</button></li>
+              <li class="select-item"><button data-select-item>Data Engineering</button></li>
+              <li class="select-item"><button data-select-item>Data Science</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="Data Analysis">
+              <a href="https://public.tableau.com/views/MentalHealthAnalysis_17134062945830/MentalHealthAnalysis"
+                target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/mentalhealth.png" alt="Mental Health Dashboard" loading="lazy">
+                </figure>
+                <h3 class="project-title">Global Mental Health Dashboard</h3>
+                <p class="project-category">Data Analysis</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Analysis">
+              <a href="https://public.tableau.com/app/profile/aishwariya.alagesan/viz/GeospatialAnalysisandVisualization_17174285721290/GlobalLayoffs" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/covid.png" alt="Covid-19 ER Analysis" loading="lazy">
+                </figure>
+                <h3 class="project-title">Covid-19 ER Utilization Analysis</h3>
+                <p class="project-category">Data Analysis</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Analysis">
+              <a href="https://github.com/Aishwariya17/Fit-life-Hub-Healthcare-Database-Management-System-">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/fitlife.png" alt="Fit-life Hub System" loading="lazy">
+                </figure>
+                <h3 class="project-title">Fit-life Hub Database System</h3>
+                <p class="project-category">Data Analysis</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Engineering">
+              <a href="https://github.com/Aishwariya17/Health_Insurance_Claims_Analytics_Dashboard-">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/claims.png" alt="Claims Dashboard" loading="lazy">
+                </figure>
+                <h3 class="project-title">Health Insurance Claims Analytics</h3>
+                <p class="project-category">Data Engineering</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Science">
+              <a href="https://github.com/Aishwariya17/Customer-Segmentation-using-RFM-Analysis-">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/customer.png" alt="RFM Segmentation" loading="lazy">
+                </figure>
+                <h3 class="project-title">Customer Segmentation (RFM & K-means)</h3>
+                <p class="project-category">Data Science</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Science">
+              <a href="https://github.com/Aishwariya17/Predictive-Modeling-of-CO2-Emissions-in-the-Automotive-Industry">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/co2emissions.png" alt="CO2 Emission Modeling" loading="lazy">
+                </figure>
+                <h3 class="project-title">Predictive Modeling of CO2 Emissions</h3>
+                <p class="project-category">Data Science</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Science">
+              <a href="https://github.com/Aishwariya17/Sentiment-Analysis-on-Amazon-Fine-Food-Reviews">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/sentiment.png" alt="Amazon Sentiment" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sentiment Analysis of Amazon Reviews</h3>
+                <p class="project-category">Data Science</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Engineering">
+              <a href="https://github.com/Aishwariya17/Bank_Marketing_Prediction_MLops">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/mlops.png" alt="Term Deposit MLOps" loading="lazy">
+                </figure>
+                <h3 class="project-title">MLOps for Term Deposit Prediction</h3>
+                <p class="project-category">Data Engineering</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Engineering">
+              <a href="https://github.com/Aishwariya17/Scalable-Data-Engineering-Pipeline-for-Reddit-Analytics">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/reddit.png" alt="Reddit ETL" loading="lazy">
+                </figure>
+                <h3 class="project-title">Reddit Data Engineering Pipeline</h3>
+                <p class="project-category">Data Engineering</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Analysis">
+              <a href="https://public.tableau.com/app/profile/aishwariya.alagesan/viz/SalesCustomerAnalysisDashboards/SalesDashboard">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/sales.png" alt="Sales Dashboard" loading="lazy">
+                </figure>
+                <h3 class="project-title">Sales & Customer Performance Dashboard</h3>
+                <p class="project-category">Data Analysis</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Analysis">
+              <a href="https://public.tableau.com/app/profile/aishwariya.alagesan/viz/Employeedetailsdashboard/Dashboard2">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/hr.png" alt="HR Dashboard" loading="lazy">
+                </figure>
+                <h3 class="project-title">HR Analytics Dashboard</h3>
+                <p class="project-category">Data Analysis</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188820.0948876467!2d-71.13483475352191!3d42.31450139929739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C%20MA!5e0!3m2!1sen!2sus!4v1746760157644!5m2!1sen!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
